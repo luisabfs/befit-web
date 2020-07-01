@@ -8,6 +8,9 @@ export default createGlobalStyle`
   }
 
   body {
+    text-rendering: optimizeLegibility !important;
+    -webkit-font-smoothing: antialiased !important;
     font-family: 'Poppins', sans-serif;
+    height: 100%;
   }
 `;
