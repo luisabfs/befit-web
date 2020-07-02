@@ -2,22 +2,50 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   display: flex;
-  height: 54px;
-  padding: 10px 100px;
+  justify-content: center;
+
+  width: 100%;
+  height: 70px;
   background-color: #4DD0E1;
 `;
 
 export const Menu = styled.ul`
   display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  list-style: none;
   width: 100%;
+  padding: 10px 0;
+  list-style: none;
+  max-width: 1200px;
+
+  @media(max-width: 1080px) and (min-width: 904px) {
+    margin: 0 64px;
+  }
+
+  @media(max-width: 903.98px) and (min-width: 728px) {
+    margin: 0 48px;
+  }
+
+  @media(max-width: 551.98px) {
+    margin: 0 24px;
+  }
 `;
 
 export const Item = styled.li`
+  display: flex;
   align-items: center;
-  padding: 16px 15px;
+
   color: #fff;
+  font-size: 18px;
   font-weight: 500;
+  padding: 10px 15px;
+
+  &:first-child {
+    margin-right: auto;
+    padding: 0 15px;
+  }
+
+  @media(max-width: 727px) {
+    &:not(:first-child) {
+      display: none;
+    }
+  }
 `;
