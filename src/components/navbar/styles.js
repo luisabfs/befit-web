@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { colors } from '../../theme';
 
 export const Container = styled.div`
   display: flex;
@@ -6,7 +7,7 @@ export const Container = styled.div`
 
   width: 100%;
   height: 70px;
-  background-color: #4DD0E1;
+  background-color: ${colors.primaryLight};
 `;
 
 export const Menu = styled.ul`
@@ -33,7 +34,7 @@ export const Item = styled.li`
   display: flex;
   align-items: center;
 
-  color: #fff;
+  color: ${colors.textLight};
   font-size: 18px;
   font-weight: 500;
   padding: 10px 15px;
