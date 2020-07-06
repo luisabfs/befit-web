@@ -3,6 +3,7 @@ import { colors } from '../../theme';
 
 export const Container = styled.div`
   display: flex;
+  align-items: center;
   justify-content: center;
 
   width: 100%;
@@ -13,7 +14,7 @@ export const Container = styled.div`
 export const Menu = styled.ul`
   display: flex;
   width: 100%;
-  padding: 10px 0;
+  padding: 10px;
   list-style: none;
   max-width: 1200px;
 

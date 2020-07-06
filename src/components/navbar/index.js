@@ -1,4 +1,5 @@
 import React from 'react';
+import Button from '../button';
 import { Container, Menu, Item } from './styles';
 import Brand from '../../assets/svg/brand-figma.svg';
 
@@ -11,6 +12,7 @@ function Navbar() {
         <Item>motivação</Item>
         <Item>como funciona</Item>
       </Menu>
+      <Button text="Cadastre-se" outlined />
     </Container>
   );
 }
