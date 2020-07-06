@@ -9,6 +9,18 @@ export const Container = styled.div`
   width: 100%;
   height: 70px;
   background-color: ${colors.primaryLight};
+
+  @media(max-width: 1080px) and (min-width: 904px) {
+    padding: 0 64px;
+  }
+
+  @media(max-width: 903.98px) and (min-width: 728px) {
+    padding: 0 48px;
+  }
+
+  @media(max-width: 551.98px) {
+    padding: 0 24px;
+  }
 `;
 
 export const Menu = styled.ul`
@@ -18,16 +30,8 @@ export const Menu = styled.ul`
   list-style: none;
   max-width: 1200px;
 
-  @media(max-width: 1080px) and (min-width: 904px) {
-    margin: 0 64px;
-  }
-
-  @media(max-width: 903.98px) and (min-width: 728px) {
-    margin: 0 48px;
-  }
-
   @media(max-width: 551.98px) {
-    margin: 0 24px;
+    padding: 0;
   }
 `;
 
@@ -42,7 +46,7 @@ export const Item = styled.li`
 
   &:first-child {
     margin-right: auto;
-    padding: 0 15px;
+    padding: 0px 15px;
   }
 
   @media(max-width: 727px) {
