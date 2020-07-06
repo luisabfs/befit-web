@@ -1,14 +1,13 @@
 import React from 'react';
 import { Navbar, Button } from '../../components';
-import Runner from '../../assets/images/man-running.png';
-import { Container, Wrapper, WrapCaption, Title, Subtitle } from './styles';
+import { Container, Wrapper, WrapCaption, Title, Subtitle, Image } from './styles';
 
 function Header() {
   return (
     <Container>
       <Navbar />
       <Wrapper>
-        <img src={Runner} />
+        <Image />
         <WrapCaption>
           <Title>O futuro da atividade física é coletivo!</Title>
           <Subtitle>
