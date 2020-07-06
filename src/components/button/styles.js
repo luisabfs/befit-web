@@ -13,4 +13,8 @@ export const BaseButton = styled.button`
   margin-top:  ${({outlined}) => outlined ? '0px' : '40px'};
   border: ${({outlined}) => outlined ? '2px solid' : 'none'};
   background-color: ${({outlined}) => outlined ? 'transparent' : colors.accent};
+
+  @media(max-width: 551.98px) {
+    width: 100%;
+  }
 `;
